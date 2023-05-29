@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Demo</title>
+</head>
+
+<body>
+    <h1>Form Demo</h1>
+
+    <button>dont submit</button>
+    <form action="/tacos">
+        <label for="Username"> Enter a Username</label>
+        <input type="text" placeholder="username">
+        <label for="password">Enter a password</label>
+        <input type="password" placeholder="password" id="">
+
+        <label for="color"> Choose a color</label>
+        <input type="color" placeholder="red"> <br>
+        <input type="number">
+        <input type="datetime">
+        <label for="age">Age</label>
+        <input type="date" name="age" id="age" value="09/03/2023" min="01/01/2023" max="01/01/1980">
+        <input type="checkbox">
+        <label for="email"> Email</label>
+        <input type="email" placeholder="email">
+        <button>submit</button>
+    </form>
+    <div class="preference">
+        <label for="cheese"> Do you like cheese ?</label>
+        <input type="checkbox" name="cheese" id="cheese">
+    </div>
+    <div class="preference">
+        <label for="peas">Do you like Peas ?</label>
+        <input type="checkbox" name="peas" id="peas">
+    </div>
+    <button> click here</button> <button>submit</button>
+    <h3>Search Google</h3>
+    <form action="https://www.google.com/searh">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+    <h3>Search Youtube</h3>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="Search_query">
+        <button>Search Youtube</button>
+    </form>
+
+    <h2>More inputs</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree" checked>
+        <label for="agree">I agree for everything</label>
+        <p>
+            <label for="xs">xs</label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="s">s</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="m">m</label>
+            <input type="radio" name="size" id="m" value="m">
+        </p>
+        <p>
+            <label for="name"> Please select your name</label>
+            <select name="name" id="name">
+                <option value="">Select</option>
+                <option value="shahin">Shahin</option>
+                <option value="roni">Roni</option>
+                <option value="rohan">Rohan</option>
+                <option value="raha">Raha</option>
+            </select>
+        </p>
+        <label for="time">Time Now</label>
+        <input type="datetime-local" name="time" id="time" min="09/03/2023T12:00" max="">
+        <div>
+            <label for="file">choose file</label>
+            <input type="file" name="file" id="file">
+        </div>
+        <input type="range" id="weight" name="name" min="05" max="99" value="80" step="5">
+        <label for="Range">Weight</label>
+        <label for="url">Enter an https:// URL:</label>
+
+        <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required>
+
+        <nav class="crumbs">
+            <ol>
+                <li class="crumb"><a href="#">Bikes</a></li>
+                <li class="crumb"><a href="#">BMX</a></li>
+                <li class="crumb">Jump Bike 3000</li>
+            </ol>
+        </nav>
+        <button>click</button>
+
+
+    </form>
+
+
+
+</body>
+
+</html>
